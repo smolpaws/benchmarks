@@ -198,9 +198,7 @@ When converting between OpenHands format and benchmark-specific formats:
   explicit maintainer approval recorded in the PR with the package, version,
   advisory/reason, and publication time. Agents must not grant themselves an
   exception. Keep overrides narrow and remove temporary exceptions afterward.
-- Repository resolver settings do not protect downstream `pip install` or
-  `uv tool install` consumers, and do not retroactively validate existing locks.
-  Use the committed lock for reproducible installs; review newly resolved
+- Use the committed lock for reproducible installs; review newly resolved
   artifacts before committing a lock update.
 
 Use uv >= 0.9.20 for this policy; older versions cannot enforce all of
